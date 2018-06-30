@@ -32,17 +32,18 @@ document.addEventListener('keydown', function(e) {
 })
 
 function moveDodgerRight() {
-  var rightNumbers = doger.style.right.replace('px', '')
-  ver left = parseInt(leftNumbers, 10)
+  var rightNumbers = dodger.style.right.replace('px', '')
+  var right = parseInt(rightNumbers, 10)
   
   if (right > 0) {
     dodger.style.right = `${right - 1}px`
+  }
+}
   document.addEventListener('keydown', function(e) {
     if (e.which === 56)
     moveDodgerRight()
   }
-  }
-}
+})
     </script>
   </body>
 </html>
